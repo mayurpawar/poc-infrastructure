@@ -11,6 +11,7 @@ Craete a database manaully or using a scrips in /poc-infrastructure/database/dev
 Below is the folder structure of this code.
 
 ```bash
+.
 ├── LICENSE
 ├── README.md
 ├── cicd
@@ -18,13 +19,20 @@ Below is the folder structure of this code.
 │   └── dev
 │       └── main.tf
 ├── environments
-│   └── dev
-│       ├── dev.env.tfvars
-│       ├── main.tf
-│       ├── outputs.tf
-│       ├── providers.tf
-│       └── variables.tf
+│   ├── dev
+│   │   ├── dev.env.tfvars
+│   │   ├── main.tf
+│   │   ├── outputs.tf
+│   │   ├── providers.tf
+│   │   └── variables.tf
+│   └── prod
+│       ├── main.tf -> ../dev/main.tf
+│       ├── outputs.tf -> ../dev/outputs.tf
+│       ├── prod.env.tfvars
+│       ├── providers.tf -> ../dev/providers.tf
+│       └── variables.tf -> ../dev/variables.tf
 └── modules
+
 ```
 
 ## Usage
