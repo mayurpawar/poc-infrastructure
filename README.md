@@ -3,8 +3,10 @@
 This is a IaaC in order to spin infrastructure for a POC.
 
 ## Installation
-Please make sure that you have [terraform](https://www.terraform.io/downloads.html) installed. 
-Please craete a database manaully or using a scrips in /poc-infrastructure/database/
+
+Make sure that you have [terraform](https://www.terraform.io/downloads.html) installed. 
+
+Craete a database manaully or using a scrips in /poc-infrastructure/database/dev. If you create a dataase independently then keep credentials in AWS Secret Manager as we will be using it in our project. At the same time note down KMS key ARN along with AWS Secret Manager ARN. These two will go in environment variables file.
 
 Below is the folder structure of this code.
 
