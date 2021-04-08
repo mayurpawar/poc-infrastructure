@@ -8,6 +8,8 @@ Make sure that you have [terraform](https://www.terraform.io/downloads.html) ins
 
 Craete a database manaully or using a scrips in /poc-infrastructure/database/dev. If you create a dataase independently then keep credentials in AWS Secret Manager as we will be using it in our project. At the same time note down KMS key ARN along with AWS Secret Manager ARN. These two will go in environment variables file.
 
+Make sure to use AWS credentials. Use your preferred way. You can update providers.tf file and add credentials for easy use. 
+
 Below is the folder structure of this code.
 
 ```bash
